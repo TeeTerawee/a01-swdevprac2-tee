@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adoption Form</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        margin: 40px;
+      }
+
+      form {
+        max-width: 400px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Adoption Form</h2>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" required />
+
+      <label>Email</label>
+      <input type="email" required />
+
+      <label>Phone</label>
+      <input type="tel" required />
+
+      <label>Address</label>
+      <input type="text" placeholder="Street" required />
+
+      <label>City</label>
+      <input type="text" required />
+
+      <label>Province</label>
+      <input type="text" required />
+
+      <label>Housing Type</label>
+      <select required>
+        <option>House</option>
+        <option>Apartment</option>
+        <option>Condo</option>
+      </select>
+
+      <label>How will you raise the dog?</label><br />
+
+      <input type="radio" name="care" /> Indoor<br />
+      <input type="radio" name="care" /> Outdoor<br />
+      <input type="radio" name="care" /> Both<br /><br />
+
+      <label>How many pets do you currently have?</label>
+      <input type="number" min="0" />
+
+      <br />
+
+      <input type="checkbox" required />
+      I agree that adoption is not guaranteed.
+
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
